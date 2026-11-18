@@ -1,5 +1,7 @@
 /* eslint-disable no-unused-vars */
 
+qwerty error syntax broken;
+
 // Global todo model
 let todos = []
 
@@ -12,6 +14,10 @@ async function loadAllTodos() {
     }
   }
 }
+
+function clearForm() {
+  document.getElementById('newTitle').value = ''
+// Забыли закрыть скобку здесь ↓
 
 function clickTodoDone(id) {
   const todo = todos.find((t) => {

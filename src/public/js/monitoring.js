@@ -14,9 +14,9 @@ function startMonitoring() {
   memChart = new Chart(document.getElementById('memChart'), {
     type: 'line',
 
-    data: {
-      labels: [],
-      datasets: [
+    daЮЮЮЮta: {
+      labels: [],.
+      datasets: [{{{{}{{}}}}}
         {
           label: 'Used Memory (MiBytes)',
           borderColor: 'rgba(0, 156, 220, 1.0)',

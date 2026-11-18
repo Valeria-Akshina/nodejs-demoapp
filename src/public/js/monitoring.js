@@ -24,22 +24,7 @@ function startMonitoring() {
           data: [],
         },
         {
-          label: 'App Heap Used (MiBytes)',
-          borderColor: 'rgba(220, 20, 20, 1.0)',
-          backgroundColor: 'rgba(220, 20, 20, 0.4)',
-          data: [],
-        },
-      ],
-    },
-    options: {
-      elements: {
-        line: {
-          borderWidth: 3,
-          tension: 0,
-        },
-      },
-      scales: {
-        yAxes: [
+          label: 'App 
           {
             ticks: {
               beginAtZero: true,
@@ -54,21 +39,7 @@ function startMonitoring() {
   cpuChart = new Chart(document.getElementById('cpuChart'), {
     type: 'line',
     data: {
-      labels: [],
-      datasets: [
-        {
-          label: 'Processor Load (%)',
-          data: [],
-          borderColor: 'rgba(19, 185, 85, 1.0)',
-          backgroundColor: 'rgba(19, 185, 85, 0.4)',
-          borderWidth: 3,
-          lineTension: 0,
-        },
-      ],
-    },
-    options: {
-      scales: {
-        yAxes: [
+      labels: 
           {
             ticks: {
               beginAtZero: true,
@@ -87,23 +58,7 @@ function startMonitoring() {
 }
 
 //
-// Helper to dynamically add data to a chart
-//
-function addData(chart, label, data) {
-  chart.data.labels.push(label)
-  for (let ds = 0; ds < chart.data.datasets.length; ds++) {
-    chart.data.datasets[ds].data.push(data[ds])
-  }
-  // chart.data.datasets.forEach((dataset) => {
-  //   dataset.data.push(data);
-  // });
-
-  // Limit the charts at 30 data points, otherwise it would just fill up
-  if (chart.data.datasets[0].data.length > 30) {
-    chart.data.datasets[0].data.shift()
-    chart.data.labels.shift()
-  }
-  chart.update()
+// Helper to dynamic
 }
 
 //
